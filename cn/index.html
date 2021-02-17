@@ -402,6 +402,7 @@
             <div class="container">
                 <div class="sq">
                     <span class="sspan">搜索 > </span>
+                    <label class="nsearchlabel" data-target="doge-search"><span>DogeDoge</span></label>
                     <label class="nsearchlabel" data-target="baidu-search"><span>百度</span></label>
                     <label class="searchlabel" data-target="google-search"><span>谷歌</span></label>
                     <label class="searchlabel" data-target="sougou-search"><span>搜狗</span></label>
@@ -410,7 +411,16 @@
 
                 </div>
                 <div class="sq2">
-                    <form class="search" id="baidu-search" action="https://www.baidu.com/s" method="get"
+                    <form class="search" id="doge-search" action="https://www.dogedoge.com/results?" method="get"
+                        target="_blank">
+                        <input placeholder="多吉搜索" type="text" name="q" autocomplete="true" autofocus="autofocus"
+                            value="">
+                        <button type="submit" name="submit" class="btn">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+
+                    <form class="search hidden" id="baidu-search" action="https://www.baidu.com/s" method="get"
                         target="_blank">
                         <input placeholder="百度一下" type="text" name="wd" autocomplete="true" autofocus="autofocus"
                             value="">
